@@ -1,7 +1,87 @@
-img{
+*{
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0
+}
+.logo{
+  grid-column: 3;
+  grid-row:2;
+  position:sticky;
+}
+ .collection img{
+   display: grid;
+   grid-column: 1/span 2;
     width:150;
     height:150px;
-    aspect-ratio: 3/2;
-    object-fit: contain;
+    ;
+    
+    /* aspect-ratio: 3/2;
+    object-fit: contain; */
     }
 
+.collection img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    aspect-ratio: 3/2;
+}
+body{
+    background-color: rgb(235, 233, 214);
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 120px 1fr 1fr 1fr 1fr;
+}
+
+h1{
+    text-align: center;
+    color:rgb(115, 5, 5);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    background-color: cornflowerblue;
+    grid-row:1;
+    grid-column: 1 / span 5;
+    border:11px dotted purple
+    
+}
+.collection{
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 2
+
+}
+
+.collection p {
+    text-align: center;
+}
+
+.updates{
+    border: 15px solid purple;
+    grid-column: 4 /span 5;
+   
+   height:300px;
+    padding:100px
+}
+
+.remove{
+    display:flex;
+    justify-content: center;
+
+}
+
+/* .itemOne{
+    grid-row: 2;
+    border: 8px solid purple;
+    text-align: center;
+}
+
+.itemTwo{
+    grid-row:3;
+    border: 8px solid purple;
+    text-align: center;
+}
+.itemThree{
+    grid-row:4;
+    border: 8px solid purple;
+    text-align: center;
+} */
