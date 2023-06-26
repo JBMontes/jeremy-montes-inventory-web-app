@@ -1,9 +1,16 @@
-let submit = document.getElementsByClassName("submit")
 
-// submit.addEventListener("click", ()=>{
+let inventory =  document.querySelectorAll(".shirt")
 
-// })
+let removals = document.querySelectorAll("button")
 
-let remove = document.querySelectorAll(".remove")
-
+for(let shirts of inventory){
+for(let removalButton of removals){
+    removalButton.addEventListener("click", (e)=>{
+        e.preventDefault();
+      if(shirts.contains(removalButton)){
+        shirts.remove()
+      }
+    })
+}
+}
 
