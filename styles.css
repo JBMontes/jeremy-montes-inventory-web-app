@@ -3,7 +3,131 @@
     margin: 0;
     padding: 0
 }
-.logo{
+
+body{
+    background-image: url(./assets/Jaranimo-Logo.png) ;
+    background-size: auto;
+    display:grid;
+    grid-template-columns: repeat(2);
+}
+h1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2;
+    height:60px;
+    position: relative;
+    left:-100px;
+    color:purple;
+    border-bottom: 3px solid black;
+    
+}
+
+.collection{
+   
+    padding: 15px;
+    width:100%;
+    border:3px solid black;
+    border-radius: 45px;
+    background-color: white;
+   
+    
+    grid-column:1;
+    position: relative;
+    left: 130px;
+    top: 80px;
+
+   
+
+}
+.shirt{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* width:25% */
+
+}
+
+img{
+    width:200px;
+    height:200px;
+    aspect-ratio: 3/2;
+}
+h2{
+    text-align: center;
+    color: red;
+    position: relative;
+    height:-90px;
+    border-bottom: 2px solid black;
+    left:-1px
+}
+.updates{
+    /* display:grid;
+    grid-column: 2;
+    grid-row:2; */
+    width:50%;
+    position: relative;
+    left:300px;
+    top:80px;
+    
+    
+
+}
+.formUpdate{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row:2;
+    position: relative;
+    top:20px;
+    padding:220px;
+    border: 3px solid black;
+    background-color: rgb(235, 233, 214);
+ 
+   border-radius: 45px;
+    /* width:11px */
+}
+
+label{
+    text-align: center;
+}
+
+button{
+    color:white;
+    background-color: red;
+    /* border-radius: 20px; */
+    height: 30px;
+    width:70px;
+    border-radius: 45px;
+}
+
+.shirt p{
+    padding:6px
+}
+
+.shirt{
+    padding: 7px;
+    border-bottom: 2px solid black;
+    border-color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .logo{
   grid-column: 3;
   grid-row:2;
   position:relative;
@@ -15,24 +139,18 @@
    grid-column: 1/span 2;
     width:100px;
     height:150px;
-    ;
-    
-    /* aspect-ratio: 3/2;
-    object-fit: contain; */
+
     }
 
 .shirt img{
     display:grid;
     position: relative;
     left:40%;
-    /* justify-content: center; */
     aspect-ratio: 3/2;
     border:2px solid black;
     
 }
-/* .shirt p{
-    padding:10px
-} */
+
 body{
     background-color: rgb(235, 233, 214);
     display: grid;
@@ -76,12 +194,8 @@ h1{
  
     left:40%;
     padding: 90px;
-    /* border: 10px solid cornflowerblue; */
     height: 50%;
-    /* position:-webkit-sticky ; */
-    top: 30px
-   
-    
+    top: 30px 
 }
 
 
@@ -100,7 +214,7 @@ button{
         display:grid;
         position: sticky;
         left:2%;
-        /* justify-content: center; */
+        justify-content: center;
         aspect-ratio: 3/2;
         border:2px solid black;
     }
@@ -149,8 +263,7 @@ button{
         
     }
     .updates{
-        /* border:7px solid cornflowerblue;
-        border-radius: 40px; */
+       
         left:40px
           
     }
@@ -160,4 +273,4 @@ button{
     .collection{
         width: 300px
     }
-  }
+  } */
