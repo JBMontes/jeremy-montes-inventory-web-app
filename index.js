@@ -2,16 +2,6 @@ let inventory = document.querySelectorAll(".shirt");
 
 let removals = document.querySelectorAll("button");
 
-for (let shirts of inventory) {
-  for (let removalButton of removals) {
-    removalButton.addEventListener("click", (e) => {
-      e.preventDefault();
-      if (shirts.contains(removalButton)) {
-        shirts.remove();
-      }
-    });
-  }
-}
 
 
 
@@ -32,10 +22,15 @@ form.addEventListener("submit" , (e)=>{
     let paragraph4 = document.createElement("p")
     let paragraph5 = document.createElement("p")
     let button = document.createElement("button")
+    
+    button.addEventListener("click", (e)=>{
+        e.preventDefault();
+        e.target.parentElement.remove()  
+    })
 
+   
     shirtImage.src = e.target["image"].value
-  
-   div.append(shirtImage)
+    div.append(shirtImage)
    paragraph1.innerText =`Name: ${e.target["name"].value}`
    div.append(paragraph1)
    paragraph2.innerText = `Price: $${e.target["price"].value}`
@@ -50,6 +45,25 @@ form.addEventListener("submit" , (e)=>{
    div.append(button)
 
    collection.append(div)
+  
    e.target.reset();
 
 })
+
+  
+
+    for (let removalButton of removals) {  
+      removalButton.addEventListener("click", (e) => {
+        console.log(e.target)
+        e.preventDefault();
+        e.target.parentElement.remove()
+      });
+    }
+  
+  
+
+
+
+
+
+   
