@@ -1,89 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="./index.js" defer></script>
     <title>Jaranimo's Vintage</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Jaranimo's Vintage Inventory</h1>
 
     <div class="collection">
-        
-       
-            <div class="shirt">    
-                <span>
-            <img src="https://process.fs.grailed.com/AJdAgnqCST4iPtnUxiGtTz/auto_image/cache=expiry:max/rotate=deg:exif/resize=height:1400/output=quality:50/no_metadata/compress/sqd6S4J9QXGqNmDrWMdc" alt="Star Wars"/>
-            <hr />
-            <p>Name: Star Wars Episode 1 Tee</p>
-            <p>Price: $250</p>
-            <p>Size: XL</p>
-            <p>In Stock: True</p>
-            <p>Condition: Excellent</p>
-            <button>Remove</button>
-            <hr />
-        </span>  
-        </div> 
+      <div class="shirt">
+        <span>
+          <img
+            src="https://process.fs.grailed.com/AJdAgnqCST4iPtnUxiGtTz/auto_image/cache=expiry:max/rotate=deg:exif/resize=height:1400/output=quality:50/no_metadata/compress/sqd6S4J9QXGqNmDrWMdc"
+            alt="Star Wars"
+          />
+          <hr />
+          <p>Name: Star Wars Episode 1 Tee</p>
+          <p>Price: $250</p>
+          <p>Size: XL</p>
+          <p>In Stock: True</p>
+          <p>Condition: Excellent</p>
+          <button>Remove</button>
+          <hr />
+        </span>
+      </div>
 
-        <div class="shirt">      
-            <img src="https://i.etsystatic.com/18755424/r/il/535fb4/4955671260/il_680x540.4955671260_lbwg.jpg" alt="Stone Cold" />
-            <hr />
-            <p>Name: Stone Cold Tee</p>
-            <p>Price: $150</p>
-            <p>Size: L</p>
-            <p>In Stock: False</p>
-            <p>Condition: Fair</p>
-            <button>Remove</button>
-            <hr/>
-        </div>
+      <div class="shirt">
+        <img
+          src="https://i.etsystatic.com/18755424/r/il/535fb4/4955671260/il_680x540.4955671260_lbwg.jpg"
+          alt="Stone Cold"
+        />
+        <hr />
+        <p>Name: Stone Cold Tee</p>
+        <p>Price: $150</p>
+        <p>Size: L</p>
+        <p>In Stock: False</p>
+        <p>Condition: Fair</p>
+        <button>Remove</button>
+        <hr />
+      </div>
 
-        <div class="shirt"> 
-            <img src="https://cdn.sanity.io/images/c1chvb1i/production/d024400f906af3d000171bd0da748abf883e6654-646x430.jpg/garfield-the-hundreds-6-1.jpg" alt="Garfield"/>
-            <hr />
-            <p>Name: The Hundreds Garfield</p>
-            <p>Price: $100</p>
-            <p>Size: M</p>
-            <p>In Stock: True</p>
-            <p>Condition: Good</p>
-            <button>Remove</button>
-            <hr/>
-        </div>
+      <div class="shirt">
+        <img
+          src="https://cdn.sanity.io/images/c1chvb1i/production/d024400f906af3d000171bd0da748abf883e6654-646x430.jpg/garfield-the-hundreds-6-1.jpg"
+          alt="Garfield"
+        />
+        <hr />
+        <p>Name: The Hundreds Garfield</p>
+        <p>Price: $100</p>
+        <p>Size: M</p>
+        <p>In Stock: True</p>
+        <p>Condition: Good</p>
+        <button>Remove</button>
+        <hr />
+      </div>
     </div>
 
     <div class="updates">
-        <h2>UPDATES</h2>
-        <hr />
-    <form class="formUpdate">
+      <h2>UPDATES</h2>
+      <hr />
+      <form class="formUpdate">
         <span>
-        <label>
-            Name:
-            <input type="text"/>
+          <label>
+            Image URL:
+            <input  type=url id="image" name="image" alt="text" />
             <label>
+              Name:
+              <input  id="name" name="name" />
+              <label>
                 Price:
-                <input type="text" />
-            </label>
-            <label>
+                <input id="price" name="price" />
+              </label>
+              <label>
                 Size:
-                <input />
-            </label>
-            <label>
+                <input id="size" name="size" />
+              </label>
+              <label>
                 In Stock:
-                <input />
-            </label>
-            <label>
+                <input id="in-stock" name="in-stock" />
+              </label>
+              <label>
                 Condition:
-                <input />
+                <input id="condition" name="condition" />
+              </label>
+              <input type="submit" />
             </label>
-            <input type="submit" class="submit"/>
-        </label>
-    </span>
-    </form>
+          </label>
+        </span>
+      </form>
     </div>
-    
-</body>
-<div class="logo">
-<img src="file:///Users/jeremymontes/Downloads/Black%20Simple%20Monoline%20Real%20Estate%20Service%20Logo.png" alt="Logo" width="400" height="375" /> 
-</div>
+  </body>
+  <div class="logo">
+    <img
+      src="file:///Users/jeremymontes/Downloads/Black%20Simple%20Monoline%20Real%20Estate%20Service%20Logo.png"
+      alt="Logo"
+      width="400"
+      height="375"
+    />
+  </div>
 </html>
