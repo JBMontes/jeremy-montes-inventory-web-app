@@ -76,9 +76,9 @@ h1{
  
     left:40%;
     padding: 90px;
-    border: 10px solid cornflowerblue;
-    height:50%;
-    position: relative;
+    /* border: 10px solid cornflowerblue; */
+    height: 50%;
+    /* position:-webkit-sticky ; */
     top: 30px
    
     
@@ -116,13 +116,13 @@ button{
   
   @media (min-width: 992px) {
     body{
-        border: 14px solid black;
+        border: 9px solid black;
         
     }
     .shirt img{
         display:grid;
         position: relative;
-        left:2%;
+        left:30%;
         aspect-ratio: 3/2;
         border:2px solid black;
   }
@@ -130,29 +130,34 @@ button{
     
     border-radius: 40px;
   }
-  
+  .collection{
+    width:300px
+  }
 }
   
   @media (min-width: 1200px) {
     body{
-        border: 3px solid teal;
+        border: 9px solid teal;
         position:relative
     }
     .shirt img{
         display:grid;
         position: relative;
-        left:4%;
+        left:30%;
         aspect-ratio: 3/2;
         border:2px solid black;
         
     }
     .updates{
-        border:7px solid cornflowerblue;
-        border-radius: 40px;
+        /* border:7px solid cornflowerblue;
+        border-radius: 40px; */
         left:40px
           
     }
     .logo{
         left:-20px
+    }
+    .collection{
+        width: 300px
     }
   }
