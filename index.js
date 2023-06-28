@@ -75,9 +75,13 @@ form.addEventListener("submit", (e) => {
   paragraph5.innerText = `Condition: ${e.target["condition"].value}`;
   div.append(paragraph5);
   div.append(br)
-  instockButton.textContent = "In Stock ✔︎" 
+  
   instockButton.setAttribute("id", "in-stock")
-  div.append( instockButton)
+  instockButton.textContent = e.target["in-stock"].textContent 
+  instockButton.style.backgroundColor = e.target["in-stock"].style.backgroundColor
+  instockButton.style.textcolor = e.target["in-stock"].style.textcolor
+  
+  div.append(instockButton)
   div.append(br)
  
   button.innerText = "Remove";
@@ -98,11 +102,11 @@ for (let removalButton of removals) {
     e.preventDefault();
     e.target.parentElement.remove();
     
-    if(collection.childElementCount < 1){
+    if(collection.childElementCount <= 0){
 
         collection.style.background = "none"
         collection.style.border = "none"
-        formUpdate.style.padding="300px"
+        formUpdate.style.padding="350px"
   }
     });
 
@@ -127,6 +131,7 @@ for(let stock of inStock){
             stock.textContent = "In Stock ✔︎";
             stock.style.background = "green";
             stock.style.textcolor = "white"
+
          }
 
       
