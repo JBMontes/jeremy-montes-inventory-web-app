@@ -6,11 +6,16 @@ let collection = document.querySelector(".collection");
 
 let div = document.createElement("div");
 
+let hOne = document.querySelector("h1")
+
+
 div.classList.add("shirt");
 // let shirtImage = document.createElement("img");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  let div = document.createElement("div");
+  div.classList.add("shirt");
   let hr = document.createElement("HR") 
   let shirtImage = document.createElement("img");
   let paragraph = document.createElement("p");
@@ -20,10 +25,10 @@ form.addEventListener("submit", (e) => {
   let paragraph4 = document.createElement("p");
   let paragraph5 = document.createElement("p");
   let button = document.createElement("button");
-
   button.addEventListener("click", (e) => {
     e.preventDefault();
     e.target.parentElement.remove();
+    e.target.reset();
   });
 
   
@@ -58,5 +63,19 @@ for (let removalButton of removals) {
     e.preventDefault();
     e.target.parentElement.remove();
     
-  });
+    if(collection.childElementCount > 0){
+        collection.style.background = "white"
+        collection.style.border = "3px solid black"
+        
+    }
+    else{
+        collection.style.background = "none"
+        collection.style.border = "none"
+  }
+    });
+
+  let resetButton = document.querySelector("#resetButton")
+  resetButton.addEventListener("click", (e)=>{
+        e.target.reset()  // IS THIS THE KIND OF RESET THEY WANT TO SEE?
+  })
 }
