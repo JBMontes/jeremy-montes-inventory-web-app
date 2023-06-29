@@ -29,6 +29,8 @@ h1 {
   opacity: 0.9;
 }
 
+
+
 .collection {
   padding: 15px;
   width: 100%;
@@ -39,6 +41,7 @@ h1 {
   position: relative;
   left: 130px;
   top: 80px;
+  
 }
 
 .shirt {
@@ -46,7 +49,7 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* width:25% */
+ 
 }
 
 img {
@@ -157,6 +160,132 @@ label {
   font-size: 22px;
   font-family: monospace;
 }
+.errorMessage{
+  border: 2px solid black;
+  background-color: white;
+  color: purple;
+  width:300px;
+  border-radius: 25px;
+  padding:30px;
+  text-align: center;
+  
+  
+
+}
+.footer{
+  display:grid;
+  grid-column: 1/ span 2;
+  position:static
+}
+
+footer{
+  display:flex;
+  
+  flex-direction: row;
+  background-image: url("./assets/8.jpeg");
+  background-size: auto;
+  justify-content: safe;
+  height:100px;
+  display: grid;
+  /* grid-column: 1/ span 5 */
+}
+
+small{
+  display:flex;
+  justify-content: flex-start;
+  color:white;
+  align-items: center;
+}
+
+footer p{
+  display:flex;
+  justify-content: flex-end;
+  color: white;
+  display:grid;
+  grid-column: 3;
+  font-size: 20px;
+  align-items: center;
+
+
+}
+
+/* 
+@media (min-width: 768px) {
+  body{
+      border: 10px solid peru;
+     
+  }
+  .shirt img{
+      display:grid;
+      position: sticky;
+      left:2%;
+      justify-content: center;
+      aspect-ratio: 3/2;
+      border:2px solid black;
+  }
+  .collection{
+      width: 150px
+  }
+  .updates{
+      position: relative;
+      border:none;
+      left:5%
+  }
+}
+
+@media (min-width: 992px) {
+  body{
+      border: 9px solid black;
+      
+  }
+  .shirt img{
+      display:grid;
+      position: relative;
+      left:30%;
+      aspect-ratio: 3/2;
+      border:2px solid black;
+}
+.updates{
+  
+  border-radius: 40px;
+}
+.collection{
+  width:300px
+}
+}
+
+@media (min-width: 1200px) {
+  body{
+      border: 9px solid teal;
+      position:relative
+  }
+  .shirt img{
+      display:grid;
+      position: relative;
+      left:30%;
+      aspect-ratio: 3/2;
+      border:2px solid black;
+      
+  }
+  .updates{
+     
+      left:40px
+        
+  }
+  .logo{
+      left:-20px
+  }
+  .collection{
+      width: 300px
+  }
+} */
+
+
+ */
+
+
+
+
 
 
 
