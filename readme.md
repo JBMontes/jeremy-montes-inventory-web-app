@@ -5,14 +5,14 @@
  ## Command Line Inventory App 
 Welcome,
 
-You will learn how to tinker with the inventory app through this simple app. 
+You will learn how to tinker with the store's inventory through this simple app. 
 
-When you open the page you will see the store's inventory to the left and the update list to the right.
-To add any shirt into the store's inventory, you will need to input the name, price, size and condition of shirts. No exeptions.
+When opening the page you will see the store's inventory to the left and the update form to the right.
+To add any shirt into the store's inventory, you will need to input the name, price, size and condition of shirts into the form. No exeptions.
 If any mistakes are made during the input process, click the reset button and everything will be wiped away. 
-After you filled in the form, click on the green check and let the app do the rest. 
+After filling out the form, click on the green check and let the app do the rest. 
 
-As employees, you also have the ability to update the store's inventory by clicking on the in stock button.
+As employees, you also have the ability to update the store's inventory by clicking on the in-stock button.
 If the button is green, then the shirt is available. If red, then the item is out of stock.
-Also, employees can remove individual items completely by pressing the remove button but remember, that there is no undo button.
-Be sure when removing any item because if you mistakenly remove an item, you will have to use the update form to return it to the store's inventory.
+Also, employees can remove individual items completely by pressing the remove button but remember, there is no undo button.
+Be sure when removing any item because if you mistakenly remove an item, you will have to use the update form to return it back to the store's inventory.
