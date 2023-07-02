@@ -2,7 +2,7 @@
 
  ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://publish.one37pm.net/wp-content/uploads/2019/08/vintage-tees-shopping-tips-tricks-mobile.jpg?resize=720%2C780)
  
- ## Command Line Inventory App 
+ ## Inventory Web Application
 Welcome,
 
 You will learn how to tinker with the store's inventory through this simple app. 
