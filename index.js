@@ -14,6 +14,8 @@ let inStock = document.querySelectorAll("#in-stock");
 
 let errorMessage = document.querySelector(".errorMessage");
 
+let inStockclick = true;
+
 div.classList.add("shirt");
 
 form.addEventListener("submit", (e) => {
@@ -42,17 +44,20 @@ form.addEventListener("submit", (e) => {
   });
 
   let clicks = 0;
+  
   instockButton.addEventListener("click", (e) => {
     e.preventDefault();
-    clicks++;
-    if (clicks % 2 === 1) {
-      instockButton.textContent = "In Stock ✖︎";
-      instockButton.style.background = "red";
-      instockButton.style.textcolor = "white";
-    } else {
-      instockButton.textContent = "In Stock ✔︎";
+
+    inStockclick = !inStockclick
+
+    if(inStockclick){
+        instockButton.textContent = "In Stock ✔︎";
       instockButton.style.background = "green";
       instockButton.style.textcolor = "white";
+    }else{
+      instockButton.textContent = "In Stock ✖︎";
+        instockButton.style.background = "red";
+        instockButton.style.textcolor = "white";
     }
   });
 
@@ -104,7 +109,7 @@ form.addEventListener("submit", (e) => {
   instockButton.setAttribute("id", "in-stock");
   instockButton.textContent = e.target["in-stock"].textContent;
   instockButton.style.backgroundColor =
-    e.target["in-stock"].style.backgroundColor;
+  e.target["in-stock"].style.backgroundColor;
   instockButton.style.textcolor = e.target["in-stock"].style.textcolor;
 
   div.append(instockButton);
@@ -114,14 +119,11 @@ form.addEventListener("submit", (e) => {
   div.append(button);
   div.append(hr);
   collection.append(div);
-
   collection.style.background = "white";
   collection.style.border = "3px solid black";
 
-
   e.target.reset();
 });
-
 // collection remove button
 for (let removalButton of removals) {
   removalButton.addEventListener("click", (e) => {
@@ -134,7 +136,6 @@ for (let removalButton of removals) {
       formUpdate.style.padding = "350px";
     }
   });
-
   let resetButton = document.querySelector("#resetButton");
   resetButton.addEventListener("click", (e) => {
     formUpdate.reset();
@@ -149,15 +150,15 @@ for (let stock of inStock) {
   let clicks = 0;
   stock.addEventListener("click", (e) => {
     e.preventDefault();
-    clicks++;
-    if (clicks % 2 === 1) {
-      stock.textContent = "In Stock ✖︎";
-      stock.style.background = "red";
-      stock.style.textcolor = "white";
-    } else {
-      stock.textContent = "In Stock ✔︎";
-      stock.style.background = "green";
-      stock.style.textcolor = "white";
-    }
+      inStockclick = !inStockclick
+      if(inStockclick){
+        stock.textContent = "In Stock ✔︎";
+        stock.style.background = "green";
+        stock.style.textcolor = "white";
+      }else{
+        stock.textContent = "In Stock ✖︎";
+          stock.style.background = "red";
+        stock.style.textcolor = "white";
+      }
   });
 }

@@ -32,7 +32,7 @@ h1 {
 
 
 .collection {
-  padding: 15px;
+  padding: 11px;
   width: 100%;
   border: 3px solid black;
   border-radius: 45px;
@@ -110,7 +110,7 @@ label {
 }
 
 .shirt p {
-  padding: 6px;
+  padding: 3px;
 }
 
 .shirt {
@@ -140,7 +140,7 @@ label {
 #in-stock {
   background-color: green;
   color: white;
-  margin: 20px;
+  
   height: 30px;
   border-radius: 19px;
   width: 100px;
@@ -168,8 +168,6 @@ label {
   border-radius: 25px;
   padding:30px;
   text-align: center;
-  
-  
 
 }
 .footer{
@@ -205,8 +203,10 @@ footer p{
   grid-column: 3;
   font-size: 20px;
   align-items: center;
+}
 
-
+#price{
+  width: 150px
 }
 
 /* 
@@ -217,47 +217,47 @@ footer p{
   }
   .shirt img{
       display:grid;
-      position: sticky;
-      left:2%;
+      
       justify-content: center;
       aspect-ratio: 3/2;
       border:2px solid black;
   }
   .collection{
       width: 150px
-  }
+   }
   .updates{
       position: relative;
       border:none;
-      left:5%
-  }
-}
+     }  
+ }  */
 
-@media (min-width: 992px) {
+
+
+/* @media (min-width: 992px) {
   body{
       border: 9px solid black;
       
-  }
-  .shirt img{
+  } */
+  /* .shirt img{
       display:grid;
       position: relative;
       left:30%;
       aspect-ratio: 3/2;
       border:2px solid black;
-}
-.updates{
+} */
+/* .updates{
   
   border-radius: 40px;
 }
 .collection{
   width:300px
 }
-}
-
+} */
+/* 
 @media (min-width: 1200px) {
   body{
       border: 9px solid teal;
-      position:relative
+     
   }
   .shirt img{
       display:grid;
@@ -278,169 +278,17 @@ footer p{
   .collection{
       width: 300px
   }
-} */
+}   */
 
 
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .logo{
-  grid-column: 3;
-  grid-row:2;
-  position:relative;
-  left: 40px;
-  top:100px
-}
- .collection img{
-   display: grid;
-   grid-column: 1/span 2;
-    width:100px;
-    height:150px;
-
-    }
-
-.shirt img{
-    display:grid;
-    position: relative;
-    left:40%;
-    aspect-ratio: 3/2;
-    border:2px solid black;
-    
-}
-
-body{
-    background-color: rgb(235, 233, 214);
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 120px 1fr 1fr 1fr 1fr;
-}
-
-h1{
-    text-align: center;
-    color:rgb(115, 5, 5);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: xx-large;
-    background-color: cornflowerblue;
-    grid-row:1;
-    grid-column: 1 / span 5;
-    border:11px solid purple;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-}
-.collection{
-   
-    grid-column: 1 / span 2;
-    grid-row: 2;
-    text-align: center;
-    padding:15px;
-    border: 7px solid black;
-    background-color: aliceblue;
-    margin:30px
-    
-    
-}
-
-.collection p {
-    text-align: center;
-}
-
-.updates{
  
-    left:40%;
-    padding: 90px;
-    height: 50%;
-    top: 30px 
-}
 
 
-button{
-    color:cornflowerblue;
-    background-color: black;
-}
 
 
-@media (min-width: 768px) {
-    body{
-        border: 10px solid peru;
-       
-    }
-    .shirt img{
-        display:grid;
-        position: sticky;
-        left:2%;
-        justify-content: center;
-        aspect-ratio: 3/2;
-        border:2px solid black;
-    }
-    .collection{
-        width: 150px
-    }
-    .updates{
-        position: relative;
-        border:none;
-        left:5%
-    }
-  }
-  
-  @media (min-width: 992px) {
-    body{
-        border: 9px solid black;
-        
-    }
-    .shirt img{
-        display:grid;
-        position: relative;
-        left:30%;
-        aspect-ratio: 3/2;
-        border:2px solid black;
-  }
-  .updates{
-    
-    border-radius: 40px;
-  }
-  .collection{
-    width:300px
-  }
-}
-  
-  @media (min-width: 1200px) {
-    body{
-        border: 9px solid teal;
-        position:relative
-    }
-    .shirt img{
-        display:grid;
-        position: relative;
-        left:30%;
-        aspect-ratio: 3/2;
-        border:2px solid black;
-        
-    }
-    .updates{
-       
-        left:40px
-          
-    }
-    .logo{
-        left:-20px
-    }
-    .collection{
-        width: 300px
-    }
-  } */
+
+
+
+
+
+

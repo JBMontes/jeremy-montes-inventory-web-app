@@ -91,7 +91,7 @@
     
               <label>
                 <strong>Price:</strong>
-                <input type="number" id="price" name="price" required oninvalid="this.setCustomValidity(`What's the price?`)" oninput="setCustomValidity('')"/>
+                <input type="number" id="price" name="price" min="1" max="1000" required oninvalid="this.setCustomValidity(`What's the price?`)" oninput="setCustomValidity('')"/>
               </label>
        
               <label>
@@ -108,8 +108,8 @@
         
                 <button id="in-stock" name="in-stock">In Stock ✔︎</button>
               <br />
-              <input id="resetButton" type="reset" value="↩︎" />
-               <input id="submitButton" type="submit" value="✔"/>
+              <input id="resetButton" type="reset" value="↩︎" title="Reset" />
+               <input id="submitButton" type="submit" value="✔" title="Submit"/>
                <br/>
               
       </form>
