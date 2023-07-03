@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="./index.js" defer></script>
     <title>Jaranimo's Vintage</title>
-
-
-
   </head>
   <body>
     <h1>Jaranimo's Vintage Inventory</h1>
@@ -78,16 +75,13 @@
       <form name="formUpdate" class="formUpdate">
         <h2>UPDATES</h2>
 
-        <p class="errorMessage" name="errorMessage" hidden>
-         
-        </p>
+        <p class="errorMessage" name="errorMessage" hidden> </p>
       
           <label>
             <strong>Image URL:</strong>
             <input  type=url id="image" name="image" alt="text"  oninvalid="this.setCustomValidity(`Paste URL of shirt image.`)" oninput="setCustomValidity('')"/>
          </label>
       
-     
         <label>
              <strong> Name:</strong>
               <input type="text" id="name" name="name"  oninvalid="this.setCustomValidity(`What do we have here?`)" oninput="setCustomValidity('')"/>
@@ -114,8 +108,7 @@
               <br />
               <input id="resetButton" type="reset" value="↩︎" title="Reset" />
                <input id="submitButton" type="submit" value="✔" title="Submit"/>
-               <br/>
-              
+               <br/>            
       </form>
     
     </div>

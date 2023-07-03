@@ -14,12 +14,11 @@ let inStock = document.querySelectorAll("#in-stock");
 
 let errorMessage = document.querySelector(".errorMessage");
 
+let updates = document.querySelector(".updates");
+
 let inStockclick = true;
 
 div.classList.add("shirt");
-
-
-
 
 form.addEventListener("submit", (e) => {
   console.log(e.target);
@@ -43,62 +42,55 @@ form.addEventListener("submit", (e) => {
   button.addEventListener("click", (e) => {
     e.preventDefault();
     e.target.parentElement.remove();
-    e.reset();
   });
 
-  let clicks = 0;
-  
   instockButton.addEventListener("click", (e) => {
     e.preventDefault();
 
-    inStockclick = !inStockclick
+    inStockclick = !inStockclick;
 
-    if(inStockclick){
-        instockButton.textContent = "In Stock ✔︎";
+    if (inStockclick) {
+      instockButton.textContent = "In Stock ✔︎";
       instockButton.style.background = "green";
       instockButton.style.textcolor = "white";
-    }else{
+    } else {
       instockButton.textContent = "In Stock ✖︎";
-        instockButton.style.background = "red";
-        instockButton.style.textcolor = "white";
+      instockButton.style.background = "red";
+      instockButton.style.textcolor = "white";
     }
   });
 
   //Start of Append Process
-  if(e.target["image"].value === ""){
+  if (e.target["image"].value === "") {
     errorMessage.removeAttribute("hidden");
     errorMessage.innerText = "Image Field Required";
     errorMessage.style.border = "3px solid black";
     errorMessage.style.backgroundColor = "white";
 
-    e.target["errorMessage"].reset()
-
-  }else{
+    e.target["errorMessage"].reset();
+  } else {
     div.append(shirtImage);
     errorMessage.innerText = "";
-     errorMessage.style.background = "none";
-     errorMessage.style.border = "0px";
+    errorMessage.style.background = "none";
+    errorMessage.style.border = "0px";
   }
-  
+
   div.append(hr);
 
   paragraph1.innerText = `Name: ${e.target["name"].value}`;
- 
-  if(e.target["name"].value === ""){
+
+  if (e.target["name"].value === "") {
     errorMessage.removeAttribute("hidden");
     errorMessage.innerText = "Name Field Required";
     errorMessage.style.border = "3px solid black";
-    errorMessage.style.backgroundColor = "white"; 
-
+    errorMessage.style.backgroundColor = "white";
     e.target["errorMessage"].reset();
-   
-  }else{
-
-     div.append(paragraph1);
-     errorMessage.innerText = "";
-     errorMessage.style.background = "none";
-     errorMessage.style.border = "0px";
-}
+  } else {
+    div.append(paragraph1);
+    errorMessage.innerText = "";
+    errorMessage.style.background = "none";
+    errorMessage.style.border = "0px";
+  }
 
   paragraph2.innerText = `Price: $${e.target["price"].value}`;
 
@@ -112,7 +104,7 @@ form.addEventListener("submit", (e) => {
   instockButton.setAttribute("id", "in-stock");
   instockButton.textContent = e.target["in-stock"].textContent;
   instockButton.style.backgroundColor =
-  e.target["in-stock"].style.backgroundColor;
+    e.target["in-stock"].style.backgroundColor;
   instockButton.style.textcolor = e.target["in-stock"].style.textcolor;
 
   div.append(instockButton);
@@ -121,10 +113,11 @@ form.addEventListener("submit", (e) => {
   button.innerText = "Remove";
   div.append(button);
   div.append(hr);
-  collection.append(div);
+
   collection.style.background = "white";
   collection.style.border = "3px solid black";
 
+  collection.append(div);
   e.target.reset();
 });
 // collection remove button
@@ -133,35 +126,38 @@ for (let removalButton of removals) {
     e.preventDefault();
     e.target.parentElement.remove();
 
-    if (collection.childElementCount <= 0) {
+    if (collection.childElementCount === 0) {
       collection.style.background = "none";
       collection.style.border = "none";
-      formUpdate.style.padding = "350px";
+      updates.style.left = "140px";
+    } else if (collection.childElementCount >= 1) {
+      collection.style.background = "white";
+      collection.style.border = "3px solid black";
     }
   });
-  let resetButton = document.querySelector("#resetButton");
-  resetButton.addEventListener("click", (e) => {
-    formUpdate.reset();
-    errorMessage.innerText = "";
-    errorMessage.style.background = "none";
-    errorMessage.style.border = "0px";
-  });
 }
+let resetButton = document.querySelector("#resetButton");
+resetButton.addEventListener("click", (e) => {
+  formUpdate.reset();
+  errorMessage.innerText = "";
+  errorMessage.style.background = "none";
+  errorMessage.style.border = "0px";
+});
 
 //collection in stock button
 for (let stock of inStock) {
   let clicks = 0;
   stock.addEventListener("click", (e) => {
     e.preventDefault();
-      inStockclick = !inStockclick
-      if(inStockclick){
-        stock.textContent = "In Stock ✔︎";
-        stock.style.background = "green";
-        stock.style.textcolor = "white";
-      }else{
-        stock.textContent = "In Stock ✖︎";
-          stock.style.background = "red";
-        stock.style.textcolor = "white";
-      }
+    inStockclick = !inStockclick;
+    if (inStockclick) {
+      stock.textContent = "In Stock ✔︎";
+      stock.style.background = "green";
+      stock.style.textcolor = "white";
+    } else {
+      stock.textContent = "In Stock ✖︎";
+      stock.style.background = "red";
+      stock.style.textcolor = "white";
+    }
   });
 }
