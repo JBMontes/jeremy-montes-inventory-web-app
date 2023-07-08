@@ -10,7 +10,8 @@
   </head>
   <body>
     <h1>Jaranimo's Vintage Inventory</h1>
-
+    <h2 class="cart">👕</h2>
+    <p class="hidden"></p>
     <div class="collection">
       <div class="shirt">
      
@@ -79,12 +80,12 @@
       
           <label>
             <strong>Image URL:</strong>
-            <input  type=url id="image" name="image" alt="text"  oninvalid="this.setCustomValidity(`Paste URL of shirt image.`)" oninput="setCustomValidity('')"/>
+            <input  type=url id="image" name="image" alt="text"  oninvalid="this.setCustomValidity(`Paste URL of shirt image.`)" oninput="setCustomValidity('')" />
          </label>
       
         <label>
              <strong> Name:</strong>
-              <input type="text" id="name" name="name"  oninvalid="this.setCustomValidity(`What do we have here?`)" oninput="setCustomValidity('')"/>
+              <input type="text" id="name" name="name"  oninvalid="this.setCustomValidity(`What do we have here?`)" oninput="setCustomValidity('')" />
             </label>
     
               <label>

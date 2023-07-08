@@ -18,6 +18,8 @@ let updates = document.querySelector(".updates");
 
 let inStockclick = true;
 
+let shirtStockClick = true;
+
 div.classList.add("shirt");
 
 form.addEventListener("submit", (e) => {
@@ -130,6 +132,7 @@ for (let removalButton of removals) {
       collection.style.background = "none";
       collection.style.border = "none";
       updates.style.left = "140px";
+      updates.style.top = "-40px";
     } else if (collection.childElementCount >= 1) {
       collection.style.background = "white";
       collection.style.border = "3px solid black";
@@ -146,7 +149,6 @@ resetButton.addEventListener("click", (e) => {
 
 //collection in stock button
 for (let stock of inStock) {
-  let clicks = 0;
   stock.addEventListener("click", (e) => {
     e.preventDefault();
     inStockclick = !inStockclick;
@@ -161,3 +163,28 @@ for (let stock of inStock) {
     }
   });
 }
+let hiddenP = document.querySelector(".hidden");
+let cart = document.querySelector(".cart");
+
+cart.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  shirtStockClick = !shirtStockClick;
+
+  let count = 0;
+  let stocked = document.querySelectorAll("#in-stock");
+
+  for (items of stocked) {
+    if (items.innerText == "In Stock ✔︎") {
+      count++;
+    }
+  }
+
+  if (shirtStockClick) {
+    hiddenP.style.display = "block";
+    hiddenP.innerText = `👕 COUNT: ${count - 1}`;
+  } else {
+    hiddenP.style.display = "none";
+  }
+});
+
