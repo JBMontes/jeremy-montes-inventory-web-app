@@ -16,3 +16,4 @@ As employees, you also have the ability to update the store's inventory by click
 If the button is green, then the shirt is available. If red, then the item is out of stock.
 Also, employees can remove individual items completely by pressing the remove button but remember, there is no undo button.
 Be sure when removing any item because if you mistakenly remove an item, you will have to use the update form to return it back to the store's inventory.
+If a in-stock count is needed, there's a button placed on the top left corner of the page that gives you an exact count.

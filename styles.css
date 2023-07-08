@@ -39,13 +39,16 @@ h1 {
   height: 60px;
   border-bottom: none;
   top: -60px;
+  left: 10px;
   background-color: rgb(234, 226, 116);
   width: fit-content;
 
   border:3px solid purple;
   border-radius: 45px;
   font-size: 43px;
-
+  animation-name: sink;
+  animation-duration: 3s;
+ 
 }
 
 .collection {
@@ -221,6 +224,25 @@ footer p {
   width: 150px;
 }
 
+.hidden{
+  display:flex;
+  justify-content: flex-start;
+align-items: center;
+  text-align: center;
+  /* position:relative; */
+   /* left: -296px;  */
+   grid-column: 1;
+
+  border: 2px solid black;
+  color:black;
+  background-color: yellow;
+  width:34%;
+  position: relative;
+  top: -60px;
+  border-radius: 40px;
+  display:none;
+}
+
 @media (max-width: 1200px) {
   body {
     border: 3px solid peru;
@@ -287,22 +309,17 @@ footer p {
   from{color: black;}
   to{color: white;}
 }
+@keyframes sink{
+  from{top: -130px}
+  to{top: -60px}
+}
 
-.hidden{
-  display:flex;
-  justify-content: flex-start;
-align-items: center;
-  text-align: center;
-  /* position:relative; */
-   /* left: -296px;  */
-   grid-column: 1;
+#in-stocks{
+  background-color: green;
+  color: white;
 
-  border: 2px solid black;
-  color:black;
-  background-color: white;
-  width:34%;
-  position: relative;
-  top: -60px;
-
-  display:none;
+  height: 30px;
+  border-radius: 19px;
+  width: 100px;
+  border-color: white;
 }

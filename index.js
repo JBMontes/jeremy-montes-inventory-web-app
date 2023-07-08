@@ -12,6 +12,8 @@ formUpdate = document.querySelector(".formUpdate");
 
 let inStock = document.querySelectorAll("#in-stock");
 
+let formInStock = document.querySelector("#in-stocks")
+
 let errorMessage = document.querySelector(".errorMessage");
 
 let updates = document.querySelector(".updates");
@@ -182,9 +184,24 @@ cart.addEventListener("click", (e) => {
 
   if (shirtStockClick) {
     hiddenP.style.display = "block";
-    hiddenP.innerText = `👕 COUNT: ${count - 1}`;
+    hiddenP.innerText = `👕 COUNT: ${count}`;
   } else {
     hiddenP.style.display = "none";
   }
 });
 
+formInStock.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  inStockclick = !inStockclick;
+
+  if (inStockclick) {
+    formInStock.textContent = "In Stock ✔︎";
+    formInStock.style.background = "green";
+    formInStock.style.textcolor = "white";
+  } else {
+    formInStock.textContent = "In Stock ✖︎";
+    formInStock.style.background = "red";
+    formInStock.style.textcolor = "white";
+  }
+});
